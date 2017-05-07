@@ -1,0 +1,16 @@
+<!ELEMENT produits (fruit* , legume*)*>
+    <!ELEMENT fruit (producteur, origine, qtity, note?, bio?)>
+        <!ATTLIST fruit type CDATA #REQUIRED
+			prix CDATA #REQUIRED
+			calibre (1 | 2 | 3 ) #REQUIRED>
+        <!ELEMENT producteur (#PCDATA)>
+        <!ELEMENT origine (#PCDATA)>
+            <!ATTLIST origine region CDATA #IMPLIED>
+            <!ELEMENT qtity (#PCDATA)>
+            <!ELEMENT note (#PCDATA)>
+            <!ELEMENT bio EMPTY>
+	<!ELEMENT legume (producteur, origine, qtity, note?, bio?)>
+            <!ATTLIST legume type CDATA #REQUIRED
+                            prix CDATA #REQUIRED
+                            calibre CDATA #REQUIRED>
+
