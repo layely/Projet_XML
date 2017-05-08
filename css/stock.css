@@ -1,0 +1,41 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : May 7, 2017, 5:06:39 PM
+    Author     : layely
+*/
+
+/* Remove the navbar's default margin-bottom and rounded borders */
+body {
+    background-color: whitesmoke;
+}
+
+.navbar {
+    margin-top: 0;
+    margin-bottom: 0;
+    border-radius: 0;
+    background-color: green;
+    border-color: green;
+}
+
+.jumbotron {
+    margin-bottom: 0;
+    color: gold;
+    /*color: green;*/
+    background-image: url("../img/le_maraicher.jpeg");
+}
+
+/* Add a gray background color and some padding to the footer */
+footer {
+    /*background-color: green;*/
+    color: yellow;
+    padding: 25px;
+    background: green; /* For browsers that do not support gradients */
+    /*    background: -webkit-linear-gradient(whitesmoke, green);  For Safari 5.1 to 6.0
+        background: -o-linear-gradient(whitesmoke, green);  For Opera 11.1 to 12.0
+        background: -moz-linear-gradient(whitesmoke, green);  For Firefox 3.6 to 15
+        background: linear-gradient(whitesmoke, green);  Standard syntax */
+}

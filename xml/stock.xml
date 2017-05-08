@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="stock.xsl"?>
+<?xml-stylesheet type="text/xsl" href="../xslt/index.xsl"?>
 <!DOCTYPE produits SYSTEM "../dtd/stock.dtd">
 <produits>
     <fruit type="clementine" prix="290" calibre="1">
         <producteur>Production Bastia</producteur>
         <origine region="Corse">France</origine>
         <qtity>15</qtity>
-        <note>Sans pépins, avec feuilles</note>
+        <note>Sans pepins, avec feuilles</note>
         <bio/>
     </fruit>
     <legume type="courgette" prix="300" calibre="2">
