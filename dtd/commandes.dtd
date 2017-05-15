@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT commandes (commande*)>
+    <!ELEMENT commande (nom, prenom, telephone, produits, nombre_article, total_general)>
+    <!ATTLIST commande numero CDATA #REQUIRED
+			date CDATA #REQUIRED>
+    <!ELEMENT nom (#PCDATA)>
+    <!ELEMENT prenom (#PCDATA)>
+    <!ELEMENT telephone (#PCDATA)>
+    <!ELEMENT nombre_article (#PCDATA)>
+    <!ELEMENT total_general (#PCDATA)>
+    <!ELEMENT produits (fruit*, legume*)*>
+        <!ELEMENT fruit (qtity, total)>
+            <!ATTLIST fruit type CDATA #REQUIRED
+			prix CDATA #REQUIRED>
+            <!ELEMENT qtity (#PCDATA)>
+            <!ELEMENT total (#PCDATA)>
+        <!ELEMENT legume (qtity, total)>
+            <!ATTLIST legume type CDATA #REQUIRED
+			prix CDATA #REQUIRED>
+

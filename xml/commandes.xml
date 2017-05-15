@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../xslt/visualiser_les_commandes.xsl"?>
+<!DOCTYPE commandes SYSTEM "../dtd/commandes.dtd">
 <!--<!DOCTYPE produits SYSTEM "../dtd/stock.dtd">-->
 <commandes>
     <commande numero="529835" date="2017-05-15 16:07:10">
