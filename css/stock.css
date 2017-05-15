@@ -56,8 +56,14 @@ img{
 }
 
 
-input {
-    max-width: 60px;
+.digit-only {
+    /*max-width: 60px;*/
+    text-align: end;
+}
+
+#submit {
+    margin-bottom: 25px;
+    background-color: #FFEF01;
 }
 
 /*    For spinner   */

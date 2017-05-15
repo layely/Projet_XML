@@ -5,7 +5,7 @@
     <fruit type="clementine" prix="290" calibre="1">
         <producteur>Production Bastia</producteur>
         <origine region="Corse">France</origine>
-        <qtity>15</qtity>
+        <qtity>9</qtity>
         <note>Sans pepins, avec feuilles</note>
         <bio/>
     </fruit>

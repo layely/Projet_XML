@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<commandes>
+  <commande>
+    <nom>Tine</nom>
+    <prenom>Moussa</prenom>
+    <telephone>778949322</telephone>
+    <date/>
+    <produits>
+      <fruit type="clementine" prix="290" calibre="1">
+        <producteur>Production Bastia</producteur>
+        <origine region="Corse">France</origine>
+        <qtity>4</qtity>
+        <note>Sans pepins, avec feuilles</note>
+        <bio/>
+      </fruit>
+    </produits>
+  </commande>
+  <commande>
+    <nom>hello</nom>
+    <prenom>pren</prenom>
+    <produits/>
+  </commande>
+  <commande>
+    <nom>hello</nom>
+    <prenom>pren</prenom>
+    <produits/>
+  </commande>
+  <commande>
+    <nom>hello</nom>
+    <prenom>pren</prenom>
+    <produits/>
+  </commande>
+  <commande>
+    <nom>hello</nom>
+    <prenom>pren</prenom>
+    <telephone>4578</telephone>
+    <produits/>
+  </commande>
+  <commande>
+    <nom>hello</nom>
+    <prenom>pren</prenom>
+    <telephone>4578</telephone>
+    <produits/>
+  </commande>
+</commandes>

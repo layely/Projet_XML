@@ -13,7 +13,6 @@
                 <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.min.css"></link>
                 <link rel="stylesheet" href="../css/stock.css"></link>
                 <title>stock.xsl</title>
-                <script src="../js/spinner.js"></script>
             </head>
             <body>
 
@@ -59,8 +58,8 @@
 
                     <br/>
                     <div class="row">
-                        <div class="col-sm-3 panel panel-default" id="panier">
-                            <h2>Panier</h2>
+                        <div class="col-sm-2">
+                            <!--                            <h2>Panier</h2>
                             <table class="table">
                                 <tr>
                                     <th>Nom</th>
@@ -79,109 +78,134 @@
                                     <td>
                                     </td>
                                 </tr>
-                            </table>
+                            </table>-->
                         </div>
                         <div class="col-sm-9 panel panel-default">
-                            <div class="row">
-                                <h2>Fruits</h2>
-                                <xsl:for-each select="/produits/fruit">
-                                    <xsl:sort select="@type"/>
-                                    <div class="col-sm-12">
-                                        <div class="col-sm-2">
-                                            <img src="../img/fruit.jpg" class="img-responsive" style="width:100%" alt="Image"/>
-                                        </div>
-                                        <div class="col-sm-9 text-left">
-                                            <div class="row">
-                                                <h3>
-                                                 &#160;&#160;
-                                                    <xsl:value-of select="@type" />&#160;&#160;&#160;&#160;
-                                                    <small>
-                                                        <xsl:value-of select="note" />
-                                                    </small>
-                                                </h3>
+                            <form method="GET" action="../php/commander.php">
+                                <div class="row">
+                                    <h2>Fruits</h2>
+                                    <xsl:for-each select="/produits/fruit">
+                                        <xsl:sort select="@type"/>
+                                        <div class="col-sm-12">
+                                            <div class="col-sm-2">
+                                                <img src="../img/fruit.jpg" class="img-responsive" style="width:100%" alt="Image"/>
                                             </div>
-                                            <div class="row">
-                                                <div class="col-sm-6 text-bottom">
-                                                    <p>
-                                                        Origine:&#160;
-                                                        <xsl:value-of select="origine/@region" />
-                                                        (<xsl:value-of select="origine" />)
-                                                        <br/>
-                                                        Producteur:&#160;
-                                                        <xsl:value-of select="producteur" />
-                                                    </p>
-                                                    <p>
-                                                        En stock:&#160;
-                                                        <xsl:value-of select="qtity" />
-                                                    </p>
-                                                </div>
-                                                <div class="col-sm-4">
+                                            <div class="col-sm-9 text-left">
+                                                <div class="row">
                                                     <h3>
-                                                        <xsl:value-of select="@prix" />
-                                                        <sup>Frs</sup>
+                                                 &#160;&#160;
+                                                        <xsl:value-of select="@type" />&#160;&#160;&#160;&#160;
+                                                        <small>
+                                                            <xsl:value-of select="note" />
+                                                        </small>
                                                     </h3>
                                                 </div>
-                                                <div class="col-sm-2 text-bottom">
-                                                    <button class="btn btn-default">Ajouter au panier</button>
+                                                <div class="row">
+                                                    <div class="col-sm-6 text-bottom">
+                                                        <p>
+                                                            Origine:&#160;
+                                                            <xsl:value-of select="origine/@region" />
+                                                            (<xsl:value-of select="origine" />)
+                                                            <br/>
+                                                            Producteur:&#160;
+                                                            <xsl:value-of select="producteur" />
+                                                        </p>
+                                                        <p>
+                                                            En stock:&#160;
+                                                            <xsl:value-of select="qtity" />
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-sm-4">
+                                                        <h3>
+                                                            <xsl:value-of select="@prix" />
+                                                            <sup>Frs</sup>
+                                                        </h3>
+                                                    </div>
+                                                    <div class="col-sm-2 text-bottom form-group">
+                                                        <!--<button class="btn btn-default">Ajouter au panier</button>-->
+                                                        <label for="{@type}">Nombre à commander:</label>
+                                                        <input type="number" min="1" max="{qtity}" class="form-control digit-only" placeholder="0" name="{@type}" id="{@type}"/>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
                                     &#160;
-                                    <hr/>
-                                </xsl:for-each>
-                            </div>
-                            <br/>
-                            <br/>
-                            <div class="row">
-                                <h2>Légumes</h2>
-                                <xsl:for-each select="/produits/legume">
-                                    <xsl:sort select="@type"/>
-                                    <div class="col-sm-12">
-                                        <div class="col-sm-2">
-                                            <img src="../img/legume.jpg" class="img-responsive" style="width:100%" alt="Image"/>
-                                        </div>
-                                        <div class="col-sm-9 text-left">
-                                            <div class="row">
-                                                <h3>
-                                                 &#160;&#160;
-                                                    <xsl:value-of select="@type" />&#160;&#160;&#160;&#160;
-                                                    <small>
-                                                        <xsl:value-of select="note" />
-                                                    </small>
-                                                </h3>
+                                        <hr/>
+                                    </xsl:for-each>
+                                </div>
+                                <br/>
+                                <br/>
+                                <div class="row">
+                                    <h2>Légumes</h2>
+                                    <xsl:for-each select="/produits/legume">
+                                        <xsl:sort select="@type"/>
+                                        <div class="col-sm-12">
+                                            <div class="col-sm-2">
+                                                <img src="../img/legume.jpg" class="img-responsive" style="width:100%" alt="Image"/>
                                             </div>
-                                            <div class="row">
-                                                <div class="col-sm-6 text-bottom">
-                                                    <p>
-                                                        Origine:&#160;
-                                                        <xsl:value-of select="origine/@region" />
-                                                        (<xsl:value-of select="origine" />)
-                                                        <br/>
-                                                        Producteur:&#160;
-                                                        <xsl:value-of select="producteur" />
-                                                    </p>
-                                                    <p>
-                                                        En stock:&#160;
-                                                        <xsl:value-of select="qtity" />
-                                                    </p>
-                                                </div>
-                                                <div class="col-sm-4">
+                                            <div class="col-sm-9 text-left">
+                                                <div class="row">
                                                     <h3>
-                                                        <xsl:value-of select="@prix" />
-                                                        <sup>Frs</sup>
+                                                 &#160;&#160;
+                                                        <xsl:value-of select="@type" />&#160;&#160;&#160;&#160;
+                                                        <small>
+                                                            <xsl:value-of select="note" />
+                                                        </small>
                                                     </h3>
                                                 </div>
-                                                <div class="col-sm-2 text-bottom">
-                                                    <button class="btn btn-default">Ajouter au panier</button>
+                                                <div class="row">
+                                                    <div class="col-sm-6 text-bottom">
+                                                        <p>
+                                                            Origine:&#160;
+                                                            <xsl:value-of select="origine/@region" />
+                                                            (<xsl:value-of select="origine" />)
+                                                            <br/>
+                                                            Producteur:&#160;
+                                                            <xsl:value-of select="producteur" />
+                                                        </p>
+                                                        <p>
+                                                            En stock:&#160;
+                                                            <xsl:value-of select="qtity" />
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-sm-4">
+                                                        <h3>
+                                                            <xsl:value-of select="@prix" />
+                                                            <sup>Frs</sup>
+                                                        </h3>
+                                                    </div>
+                                                    <div class="col-sm-2 text-bottom form-group">
+                                                        <!--<button class="btn btn-default">Ajouter au panier</button>-->
+                                                        <label for="{@type}">Nombre à commander:</label>
+                                                        <input type="number" min="1" max="{qtity}" class="form-control digit-only" placeholder="0" name="{@type}" id="{@type}"/>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
                                     &#160;
-                                    <hr/>
-                                </xsl:for-each>
-                            </div>
+                                        <hr/>
+                                    </xsl:for-each>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-3 form-group">
+                                        <label for="nom">Nom*</label>
+                                        <input class="form-control" type="text" name="nom"/>
+                                    </div>
+                                    <div class="col-sm-3 form-group">
+                                        <label for="prenom">Prenom*</label>
+                                        <input class="form-control" type="text" name="prenom"/>
+                                    </div>
+                                    <div class="col-sm-3 form-group">
+                                        <label for="tel">Tél*</label>
+                                        <input class="form-control" type="text" name="tel"/>
+                                    </div>
+                                    <div class="col-sm-3 form-group">
+                                        <br/>
+                                        <button type="submit" class="btn btn-default" id="submit">Commander</button>
+                                    </div>
+                                </div>
+                                
+                            </form>
                         </div>
                     </div>
                     <br/>
