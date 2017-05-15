@@ -1,6 +1,6 @@
 <?php
 
-//echo "hello";
+//initialisation des chemins;
 $stock_xml = "../xml/stock.xml";
 $commandes_xml = "../xml/commandes.xml";
 
@@ -64,7 +64,7 @@ foreach ($fruits as $fruit) {
 }
 
 
-//$domStock->save($stock_xml);	
+$domStock->save($stock_xml);	
 
 $domCommandes->loadXML($domCommandes->saveXML());
 $domCommandes->save($commandes_xml);
