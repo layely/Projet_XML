@@ -1,45 +1,121 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../xslt/visualiser_les_commandes.xsl"?>
+<!--<!DOCTYPE produits SYSTEM "../dtd/stock.dtd">-->
 <commandes>
-  <commande>
-    <nom>Tine</nom>
-    <prenom>Moussa</prenom>
-    <telephone>778949322</telephone>
-    <date/>
-    <produits>
-      <fruit type="clementine" prix="290" calibre="1">
-        <producteur>Production Bastia</producteur>
-        <origine region="Corse">France</origine>
-        <qtity>4</qtity>
-        <note>Sans pepins, avec feuilles</note>
-        <bio/>
-      </fruit>
-    </produits>
-  </commande>
-  <commande>
-    <nom>hello</nom>
-    <prenom>pren</prenom>
-    <produits/>
-  </commande>
-  <commande>
-    <nom>hello</nom>
-    <prenom>pren</prenom>
-    <produits/>
-  </commande>
-  <commande>
-    <nom>hello</nom>
-    <prenom>pren</prenom>
-    <produits/>
-  </commande>
-  <commande>
-    <nom>hello</nom>
-    <prenom>pren</prenom>
-    <telephone>4578</telephone>
-    <produits/>
-  </commande>
-  <commande>
-    <nom>hello</nom>
-    <prenom>pren</prenom>
-    <telephone>4578</telephone>
-    <produits/>
-  </commande>
+    <commande numero="529835" date="2017-05-15 16:07:10">
+        <nom>Sow</nom>
+        <prenom>Abou</prenom>
+        <telephone>778673211</telephone>
+        <produits>
+            <fruit type="orange" prix="350">
+                <qtity>2</qtity>
+                <total>700</total>
+            </fruit>
+        </produits>
+        <nombre_article>2</nombre_article>
+        <total_general>700</total_general>
+    </commande>
+    <commande numero="655291" date="2017-05-15 17:15:17">
+        <nom>Ly</nom>
+        <prenom>Abdoulaye</prenom>
+        <telephone>45789543457</telephone>
+        <produits>
+            <fruit type="clementine" prix="293">
+                <qtity>1</qtity>
+                <total>293</total>
+            </fruit>
+            <fruit type="melon" prix="150">
+                <qtity>1</qtity>
+                <total>150</total>
+            </fruit>
+        </produits>
+        <nombre_article>2</nombre_article>
+        <total_general>443</total_general>
+    </commande>
+    <commande numero="544122" date="2017-05-15 18:25:31">
+        <nom>Ly</nom>
+        <prenom>Abdou</prenom>
+        <telephone>45789543457</telephone>
+        <produits>
+            <fruit type="clementine" prix="293">
+                <qtity>1</qtity>
+                <total>293</total>
+            </fruit>
+            <fruit type="melon" prix="150">
+                <qtity>1</qtity>
+                <total>150</total>
+            </fruit>
+        </produits>
+        <nombre_article>2</nombre_article>
+        <total_general>443</total_general>
+    </commande>
+    <commande numero="299624" date="2017-05-15 18:37:36">
+        <nom>Djina</nom>
+        <prenom>Thom</prenom>
+        <telephone>45789543457</telephone>
+        <produits/>
+        <nombre_article>0</nombre_article>
+        <total_general>0</total_general>
+    </commande>
+    <commande numero="926850" date="2017-05-15 18:40:49">
+        <nom>Djina</nom>
+        <prenom>Thom</prenom>
+        <telephone>45789543457</telephone>
+        <produits/>
+        <nombre_article>0</nombre_article>
+        <total_general>0</total_general>
+    </commande>
+    <commande numero="845509" date="2017-05-15 18:41:10">
+        <nom>Djina</nom>
+        <prenom>Thom</prenom>
+        <telephone>45789543457</telephone>
+        <produits/>
+        <nombre_article>0</nombre_article>
+        <total_general>0</total_general>
+    </commande>
+    <commande numero="899419" date="2017-05-15 18:42:38">
+        <nom>Djina</nom>
+        <prenom>Thom</prenom>
+        <telephone>45789543457</telephone>
+        <produits/>
+        <nombre_article>0</nombre_article>
+        <total_general>0</total_general>
+    </commande>
+    <commande numero="718631" date="2017-05-15 19:07:55">
+        <nom>Djina</nom>
+        <prenom>Thom</prenom>
+        <telephone>45789543457</telephone>
+        <produits/>
+        <nombre_article>0</nombre_article>
+        <total_general>0</total_general>
+    </commande>
+    <commande numero="909817" date="2017-05-15 19:21:09">
+        <nom>Djina</nom>
+        <prenom>Thom</prenom>
+        <telephone>45789543457</telephone>
+        <produits/>
+        <nombre_article>0</nombre_article>
+        <total_general>0</total_general>
+    </commande>
+    <commande numero="674301" date="2017-05-15 19:23:02">
+        <nom>Djina</nom>
+        <prenom>Thom</prenom>
+        <telephone>45789543457</telephone>
+        <produits/>
+        <nombre_article>0</nombre_article>
+        <total_general>0</total_general>
+    </commande>
+    <commande numero="270661" date="2017-05-15 19:23:56">
+        <nom>Djina</nom>
+        <prenom>Thom</prenom>
+        <telephone>45789543457</telephone>
+        <produits>
+            <legume type="chou_fleur" prix="090">
+                <qtity>2</qtity>
+                <total>180</total>
+            </legume>
+        </produits>
+        <nombre_article>2</nombre_article>
+        <total_general>180</total_general>
+    </commande>
 </commandes>

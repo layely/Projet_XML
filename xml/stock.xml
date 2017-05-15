@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="../xslt/modifier_stock.xsl"?>
+<?xml-stylesheet type="text/xsl" href="../xslt/visualiser_et_commander_les_produits.xsl"?>
 <!DOCTYPE produits SYSTEM "../dtd/stock.dtd">
 <produits>
   <fruit type="clementine" prix="293" calibre="1">
     <producteur region="">Production Bastia</producteur>
     <origine>Mali</origine>
-    <qtity>10</qtity>
+    <qtity>0</qtity>
     <note/>
   </fruit>
   <fruit type="orange" prix="350" calibre="1">
     <producteur>Production Bastia</producteur>
     <origine>Senegal</origine>
-    <qtity>9</qtity>
+    <qtity>1</qtity>
     <note>Sans pepins, avec feuilles</note>
     <bio/>
   </fruit>
@@ -24,7 +24,7 @@
   <legume type="chou fleur" prix="090" calibre="2">
     <producteur>Pontivy et Cie</producteur>
     <origine region="Bretagne">France</origine>
-    <qtity>100</qtity>
+    <qtity>98</qtity>
   </legume>
   <legume type="salade" prix="075" calibre="3">
     <producteur>Marius Production</producteur>
@@ -35,7 +35,7 @@
   <fruit type="melon" prix="150" calibre="1">
     <producteur>Marius Production</producteur>
     <origine region="Provence">France</origine>
-    <qtity>50</qtity>
+    <qtity>0</qtity>
     <note>Melon brodé</note>
     <bio/>
   </fruit>

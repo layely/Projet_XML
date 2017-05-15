@@ -15,11 +15,9 @@
                 <title>stock.xsl</title>
             </head>
             <body>
-
                 <div class="jumbotron">
                     <div class="container text-center">
                         <h1>Le Maraicher</h1>
-                        <p>Some text that represents "Me"...</p>
                     </div>
                 </div>
 
@@ -59,26 +57,6 @@
                     <br/>
                     <div class="row">
                         <div class="col-sm-2">
-                            <!--                            <h2>Panier</h2>
-                            <table class="table">
-                                <tr>
-                                    <th>Nom</th>
-                                    <th>Prix</th>
-                                    <th>Qtité</th>
-                                    <th>Total</th>
-                                </tr>
-                                <tr>
-                                    <td>
-                                    </td>
-                                    <td>
-                                    </td>
-                                    <td>
-                                        <input type="text" class="form-control" value="42"/>
-                                    </td>
-                                    <td>
-                                    </td>
-                                </tr>
-                            </table>-->
                         </div>
                         <div class="col-sm-9 panel panel-default">
                             <form method="GET" action="../php/commander.php">
@@ -189,15 +167,15 @@
                                 <div class="row">
                                     <div class="col-sm-3 form-group">
                                         <label for="nom">Nom*</label>
-                                        <input class="form-control" type="text" name="nom"/>
+                                        <input class="form-control" type="text" name="nom" required=""/>
                                     </div>
                                     <div class="col-sm-3 form-group">
                                         <label for="prenom">Prenom*</label>
-                                        <input class="form-control" type="text" name="prenom"/>
+                                        <input class="form-control" type="text" name="prenom" required=""/>
                                     </div>
                                     <div class="col-sm-3 form-group">
                                         <label for="tel">Tél*</label>
-                                        <input class="form-control" type="text" name="tel"/>
+                                        <input class="form-control" type="text" name="tel" required=""/>
                                     </div>
                                     <div class="col-sm-3 form-group">
                                         <br/>
