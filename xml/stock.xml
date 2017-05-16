@@ -1,19 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="../xslt/visualiser_et_commander_les_produits.xsl"?>
+<!--<?xml-stylesheet type="text/xsl" href="../xslt/visualiser_et_commander_les_produits.xsl"?>-->
+<?xml-stylesheet type="text/xsl" href="../xslt/modifier_stock.xsl"?>
+<!--NB-->
+<!--Commenter un xml-stylesheet en fonction de l'opération souhaité a faire-->
 <!DOCTYPE produits SYSTEM "../dtd/stock.dtd">
 <produits>
   <fruit type="clementine" prix="293" calibre="1">
     <producteur region="">Production Bastia</producteur>
     <origine>Mali</origine>
-    <qtity>0</qtity>
+    <qtity>55</qtity>
     <note/>
   </fruit>
-  <fruit type="orange" prix="350" calibre="1">
-    <producteur>Production Bastia</producteur>
+  <fruit type="orange" prix="350" calibre="2">
+    <producteur region="">Production Bastia</producteur>
     <origine>Senegal</origine>
-    <qtity>1</qtity>
-    <note>Sans pepins, avec feuilles</note>
-    <bio/>
+    <qtity>100</qtity>
+    <note/>
   </fruit>
   <legume type="courgette" prix="300" calibre="2">
     <producteur>Madrid Hortelano</producteur>
@@ -33,10 +35,10 @@
     <note>Batavia</note>
   </legume>
   <fruit type="melon" prix="150" calibre="1">
-    <producteur>Marius Production</producteur>
-    <origine region="Provence">France</origine>
-    <qtity>0</qtity>
-    <note>Melon brodé</note>
+    <producteur region="Provence">Marius Production</producteur>
+    <origine>France</origine>
+    <qtity>234</qtity>
+    <note/>
     <bio/>
   </fruit>
 </produits>

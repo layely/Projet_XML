@@ -187,9 +187,6 @@
                                                     
                                                 </div>
                                                 <div class="modal-footer">
-                                                    <form method="GET" action="../php/supprimer_produit.php">
-                                                        <button type="submit" class="btn btn-default" id="supprimer">Supprimer</button>
-                                                    </form>
                                                 </div>
                                             </div>
 
