@@ -3,6 +3,8 @@
 <?xml-stylesheet type="text/xsl" href="../xslt/modifier_stock.xsl"?>
 <!--NB-->
 <!--Commenter un xml-stylesheet en fonction de l'opération souhaité a faire-->
+
+
 <!DOCTYPE produits SYSTEM "../dtd/stock.dtd">
 <produits>
   <fruit type="clementine" prix="293" calibre="1">
