@@ -7,4 +7,4 @@ taper sur votre terminal
 ~~~~ git clone https://github.com/layely/Projet_XML.git ~~~~
 
 ## Note
-Assurer que votre server web a le droit d'écriture sur sur les fichiers xml
+Assurez vous que votre server web a les droits d'écriture sur sur les fichiers xml
